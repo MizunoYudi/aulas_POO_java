@@ -6,10 +6,11 @@ public class testeScanner {
 		System.err.println("Digite alguma coisa");
 		while(sc.hasNext()){
 			String value = sc.next();
-			if(value.equals("Mexido")){
+			if(!value.equals("Mexido")){
+				System.out.println(value);
+			} else{
 				break;
 			}
-			System.out.println(sc.next());
 		}
 		sc.close();
 	}
