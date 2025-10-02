@@ -38,8 +38,8 @@ class Triangulo extends FiguraGeometrica {
 public class CalculadoraAreas {
     public static void main(String[] args) {
         FiguraGeometrica.saudacao();
-        Circulo obj = new Circulo();
+        FiguraGeometrica obj = new Retangulo();
 
-        System.out.println("Resultado: " + obj.calcularArea(3));
+        System.out.println("Resultado: " + obj.calcularArea(10.0));
     }
 }
