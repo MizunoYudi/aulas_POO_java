@@ -1,38 +1,31 @@
-class FiguraGeometrica {
-    public static double PI = 3.14159;
+package aula08;
 
+class abstract FiguraGeometrica {
     public static void saudacao(){
         System.out.println("Bem vindo! Cuidado os cara tao no teto");
     }
-
-    public double calcularArea(double paramUnico){
-        return paramUnico * paramUnico;
-    }
-
-    public double calcularArea(double base, double altura){
-        return base * altura;
-    }
 }
 
-class Circulo extends FiguraGeometrica {
+class Circulo extends FiguraGeometrica implements FiguraParametroUnico {
     @Override
     public double calcularArea(double raio){
         return PI * (raio*raio);
     }
 }
 
-class Retangulo extends FiguraGeometrica {
+class Retangulo extends FiguraGeometrica implements FiguraParametroComposto {
     @Override
     public double calcularArea(double largura, double altura){
         return largura * altura;
     }
 }
 
-class Triangulo extends FiguraGeometrica {
+class Triangulo extends FiguraGeometrica implements FiguraParametroComposto {
     @Override
     public double calcularArea(double base, double altura){
         return (base * altura)/2;
     }
+    
 }
 
 public class CalculadoraAreas {
