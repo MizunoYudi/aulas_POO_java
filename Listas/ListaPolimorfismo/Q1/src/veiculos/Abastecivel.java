@@ -1,5 +1,5 @@
 package veiculos;
 
 public interface Abastecivel {
-	public void Abastecer();
+	public void abastecer();
 }
