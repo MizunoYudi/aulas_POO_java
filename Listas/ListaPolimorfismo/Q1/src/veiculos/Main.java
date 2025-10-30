@@ -10,5 +10,6 @@ public class Main {
 		frota.add(new Onibus("Onibus 123", 50));
 		
 		frota.get(0).mostrarInfo();
+		frota.get(0).mover();
 	}
 }

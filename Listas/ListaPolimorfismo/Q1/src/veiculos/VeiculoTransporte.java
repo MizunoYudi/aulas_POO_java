@@ -14,6 +14,6 @@ public abstract class VeiculoTransporte {
 	}
 	
 	public void mostrarInfo() {
-		
+		System.out.println(String.format("Veiculo: %s\nCapacidade: %d", identificador, capacidade));
 	}
 }
